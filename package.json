@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Josephats1/webservice/issues"
   },
-  "homepage": "https://github.com/Josephats1/webservice#readme"
+  "homepage": "https://github.com/Josephats1/webservice#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
