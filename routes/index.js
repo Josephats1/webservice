@@ -1,7 +1,13 @@
-const router = require('express').Router();
+const express = require("express");
+// const app = express();
+const routes = require("express").Router();
 
-router.get('/', (req, res) => {
-    res.send('Baluku You Made It!');
+routes.get("/", (req, res) => {
+  res.send("Hello World");
 });
 
-module.exports = router;
+routes.use("/", require("./swagger"));
+
+routes.use("/contacts", require("./contacts"));
+
+module.exports = routes;
